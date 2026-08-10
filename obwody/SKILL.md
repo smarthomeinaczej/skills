@@ -34,10 +34,10 @@ Kod obwodu = `MIEJSCE-TYP{NUMER}` (+ opcjonalnie `-URZĄDZENIE`) — MIEJSCE i T
 | WL | włącznik (sygnał, bez 230 V) | skrętka U/UTP kat. 6 | rozdzielnica |
 | OSW | oświetlenie 230 V | YDYp 3x1.5 | rozdzielnica |
 | GN | gniazdka | YDYp 3x2.5 | rozdzielnica |
-| ZAL | żaluzje / rolety | OWY 5x0.75 (silnik sterowany z rozdzielnicy) | rozdzielnica |
+| ZAL | żaluzje / rolety | YDYp 5x1.5 (4 żyły robocze + 1 zapasowa) | rozdzielnica |
 | 3F | obwód trójfazowy (np. indukcja) | YDYp 5x2.5 lub 5x4 | rozdzielnica |
 | LAN | sieć / punkt dostępowy | skrętka U/UTP kat. 6 | szafa rack |
-| KAM | kamera (PoE) | skrętka U/UTP kat. 6 | szafa rack |
+| KAM | kamera (PoE) | skrętka U/UTP kat. 6 (na zewnątrz: żelowana) | szafa rack |
 | GLO | głośnik | kabel głośnikowy 2x1.5 | szafa rack |
 | PIR | czujnik ruchu | YTDY 6x0.5 lub skrętka | centrala alarmowa |
 | OBEC | czujnik obecności | YTDY 6x0.5 lub skrętka | rozdzielnica |
@@ -47,6 +47,17 @@ Kod obwodu = `MIEJSCE-TYP{NUMER}` (+ opcjonalnie `-URZĄDZENIE`) — MIEJSCE i T
 | WOD | czujnik zalania | YTDY 4x0.5 | centrala alarmowa |
 
 Wymiary kabli zapisuj zawsze w konwencji `3x1.5` (mała litera `x`, kropka dziesiętna) — bez znaku `×` i bez przecinka dziesiętnego, który rozjechałby kolumny CSV.
+
+**Obwody gniazdkowe licz oszczędnie.** Obwód `GN` to nie jedno gniazdko, tylko **cały kabel z rozdzielnicy zasilający grupę gniazd w pomieszczeniu**. Zasady:
+
+- domyślnie **jeden obwód `GN` na pomieszczenie**, niezależnie od tego, ile gniazd w nim wisi,
+- drugi obwód `GN` dodawaj tylko wtedy, gdy jest ku temu powód: duży pokój z wieloma stanowiskami, osobna strefa (np. blat kuchenny vs reszta kuchni), spodziewane duże obciążenie,
+- **obwód dedykowany** (`GN-LOD`, `GN-ZMY`, `GN-PIE`, wallbox) rezerwuj dla urządzeń, które go faktycznie wymagają — dużej mocy albo takich, których nie chcesz stracić przy zadziałaniu innego zabezpieczenia,
+- nie mnóż obwodów „na zapas" — łatwiej dołożyć gniazdo do istniejącego obwodu niż ciągnąć nowy kabel do rozdzielnicy.
+
+Jeżeli użytkownik chce więcej obwodów gniazdkowych, niż wynika z szablonu — dodaj je, ale najpierw powiedz, ile gniazd spokojnie uciągnie jeden obwód.
+
+**Skrętka na zewnątrz musi być zewnętrzna, żelowana.** Każdy obwód na skrętce, którego kabel opuszcza budynek — kamery na elewacji i przy furtce, bramofon, punkt dostępowy w ogrodzie, wszystko z kondygnacji `zewnątrz` — dostaje w kolumnie `kabel` wpis `skrętka zewnętrzna żelowana U/UTP kat. 6`, a w `uwagi` — `kabel zewnętrzny, żelowany`. Zwykła skrętka wewnętrzna wciągnie wodę do środka i wysiądzie po pierwszej zimie. Obwody biegnące wyłącznie wewnątrz zostają na zwykłej `skrętka U/UTP kat. 6`.
 
 Gdy w pomieszczeniu jest więcej obwodów tego samego typu, dodaj numer po typie: `02-WL1`, `02-WL2`.
 W kolumnie `typ` w CSV zawsze wpisuj pojedynczy skrót z tabeli (np. `PIR`, nie `PIR/OBEC`).
@@ -69,7 +80,13 @@ Wiersze zapisuj w kolejności pomieszczeń z `pomieszczenia.csv`.
 
 Zapisuj plik w UTF-8. Pole zawierające przecinek ujmij w cudzysłowy (RFC 4180), np. `"oświetlenie blatu, wyspy i szafek"` — inaczej rozjedzie kolumny.
 
-Przykładowy wiersz: `02-GN-LOD,parter,kuchnia,GN,rozdzielnica,gniazdko dedykowane lodówka,YDYp 3x2.5,obwód dedykowany`
+Przykładowe wiersze:
+
+```csv
+02-GN-LOD,parter,kuchnia,GN,rozdzielnica,gniazdko dedykowane lodówka,YDYp 3x2.5,obwód dedykowany
+12-ZAL,piętro,sypialnia,ZAL,rozdzielnica,roleta na oknie,YDYp 5x1.5,4 żyły robocze + 1 zapasowa
+Z1-KAM,zewnątrz,furtka,KAM,szafa rack,kamera przy furtce,skrętka zewnętrzna żelowana U/UTP kat. 6,"kabel zewnętrzny, żelowany"
+```
 
 ## Proces wywiadu
 
@@ -115,16 +132,16 @@ Dla każdego pomieszczenia po kolei:
 | Pomieszczenie | Typowy zestaw |
 |---|---|
 | wiatrołap | WL, OSW, GN, KON (drzwi), KAM (opcja) |
-| kuchnia | WL×2, OSW, GN×3, GN-LOD, GN-ZMY, GN-PIE, 3F (indukcja), ZAL, KON, DYM |
-| salon | WL×2, OSW, GN×4, ZAL (na okno), GLO, OBEC |
-| sypialnia | WL×2 (przy łóżku), OSW, GN×3, ZAL, KON |
+| kuchnia | WL×2, OSW, GN (blat), GN (reszta pomieszczenia), GN-LOD, GN-ZMY, GN-PIE, 3F (indukcja), ZAL, KON, DYM |
+| salon | WL×2, OSW, GN×2, ZAL (na okno), GLO, OBEC |
+| sypialnia | WL×2 (przy łóżku), OSW, GN, ZAL, KON |
 | pokój dziecka | jak sypialnia |
-| łazienka | WL, OSW, GN×2, OBEC, WOD |
+| łazienka | WL, OSW, GN, OBEC, WOD |
 | korytarz / schody | WL×2, OSW, OBEC×2, DYM |
-| biuro | WL, OSW, GN×4, LAN×2, ZAL |
-| garaż | WL, OSW, GN×2, GN 3F (opcja warsztat/wallbox), KON (brama), CZAD |
-| pom. techniczne | WL, OSW, GN×2, LAN (uplink), DYM, WOD |
-| zewnętrze | OSW (elewacja), GN (taras), KAM, KON (furtka/brama), LAN (bramofon) |
+| biuro | WL, OSW, GN×2 (stanowiska pracy), LAN×2, ZAL |
+| garaż | WL, OSW, GN, 3F (opcja warsztat/wallbox), KON (brama), CZAD |
+| pom. techniczne | WL, OSW, GN, LAN (uplink), DYM, WOD |
+| zewnętrze | OSW (elewacja), GN (taras), KAM, KON (furtka/brama), LAN (bramofon) — skrętki zewnętrzne, żelowane |
 
 ### Zakończenie
 
@@ -134,6 +151,8 @@ Dla każdego pomieszczenia po kolei:
    - prefiks MIEJSCE każdego kodu istnieje w `pomieszczenia.csv`,
    - każdy `typ` pochodzi z tabeli typów,
    - `cel` zgadza się z punktem zbiorczym danego typu z tabeli typów,
+   - każdy obwód na skrętce z kondygnacji `zewnątrz` (oraz każda kamera na elewacji) ma w `kabel` skrętkę zewnętrzną żelowaną,
+   - liczba obwodów `GN` w pomieszczeniu jest uzasadniona — jeżeli jest ich więcej niż jeden bez powodu, scal je,
    - każdy wiersz ma dokładnie 8 kolumn.
    Znalezione błędy popraw przed zapisem — nie zapisuj pliku z błędami.
 3. Zapisz finalny `obwody.csv` i podaj ścieżkę.
