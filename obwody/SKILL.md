@@ -138,7 +138,7 @@ Dla każdego pomieszczenia po kolei:
 | pokój dziecka | jak sypialnia |
 | łazienka | WL, OSW, GN, OBEC, WOD |
 | korytarz / schody | WL×2, OSW, OBEC×2, DYM |
-| biuro | WL, OSW, GN×2 (stanowiska pracy), LAN×2, ZAL |
+| biuro | WL, OSW, GN, LAN×2, ZAL |
 | garaż | WL, OSW, GN, 3F (opcja warsztat/wallbox), KON (brama), CZAD |
 | pom. techniczne | WL, OSW, GN, LAN (uplink), DYM, WOD |
 | zewnętrze | OSW (elewacja), GN (taras), KAM, KON (furtka/brama), LAN (bramofon) — skrętki zewnętrzne, żelowane |
