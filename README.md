@@ -7,7 +7,7 @@ Każdy skill to podkatalog z plikiem `SKILL.md` — instalujesz tylko te, który
 
 | Skill | Co robi | Odcinek |
 |---|---|---|
-| [obwody](obwody/) | Wywiad o Twoim domu (pokój po pokoju) i kompletna lista obwodów elektrycznych smart home jako `obwody.csv` — z kodami obwodów i propozycjami kabli | *(wkrótce)* |
+| [obwody](obwody/) | Wywiad o Twoim domu (pokój po pokoju) i kompletna lista obwodów elektrycznych smart home jako `obwody.csv` — z kodami obwodów i propozycjami kabli | [▶ YouTube](https://www.youtube.com/watch?v=vVOLFLKXQP4) |
 
 ## Instalacja
 
