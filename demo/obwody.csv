@@ -1,0 +1,66 @@
+kod,kondygnacja,pomieszczenie,typ,cel,opis,kabel,uwagi
+01-WL1,parter,wiatrołap,WL,rozdzielnica,włącznik przy drzwiach wejściowych,U/UTP kat. 6,
+01-WL2,parter,wiatrołap,WL,rozdzielnica,włącznik przy wyjściu do wnętrza domu,U/UTP kat. 6,
+01-OSW,parter,wiatrołap,OSW,rozdzielnica,oświetlenie sufitowe,YDYp 3x1.5,
+01-GN1,parter,wiatrołap,GN,rozdzielnica,gniazdko ogólne,YDYp 3x2.5,
+01-GN2-TAB,parter,wiatrołap,GN,rozdzielnica,gniazdko za tabletem ściennym,YDYp 3x2.5,tablet z podglądem z domofonu zasilany z gniazdka
+01-LAN,parter,wiatrołap,LAN,szafa rack,access point sufitowy,U/UTP kat. 6,PoE
+01-KAM,parter,wiatrołap,KAM,szafa rack,kamera nad wejściem,U/UTP kat. 6,PoE
+01-KON,parter,wiatrołap,KON,centrala alarmowa,kontaktron drzwi wejściowych,YTDY 4x0.5,
+01-PIR,parter,wiatrołap,PIR,centrala alarmowa,czujka ruchu,YTDY 6x0.5,
+02-WL1,parter,kuchnia,WL,rozdzielnica,włącznik przy wejściu do kuchni,U/UTP kat. 6,
+02-WL2,parter,kuchnia,WL,rozdzielnica,włącznik oświetlenia blatu,U/UTP kat. 6,
+02-OSW1,parter,kuchnia,OSW,rozdzielnica,oświetlenie sufitowe,YDYp 3x1.5,
+02-OSW2,parter,kuchnia,OSW,rozdzielnica,oświetlenie podszafkowe blatu,YDYp 3x1.5,
+02-GN1,parter,kuchnia,GN,rozdzielnica,gniazdka nad blatem - strona lewa,YDYp 3x2.5,
+02-GN2,parter,kuchnia,GN,rozdzielnica,gniazdka nad blatem - strona prawa,YDYp 3x2.5,
+02-GN3,parter,kuchnia,GN,rozdzielnica,gniazdka ogólne (stół / wyspa),YDYp 3x2.5,
+02-GN-LOD,parter,kuchnia,GN,rozdzielnica,gniazdko dedykowane lodówka,YDYp 3x2.5,obwód dedykowany
+02-GN-ZMY,parter,kuchnia,GN,rozdzielnica,gniazdko dedykowane zmywarka,YDYp 3x2.5,obwód dedykowany
+02-GN-PIE,parter,kuchnia,GN,rozdzielnica,gniazdko dedykowane piekarnik,YDYp 3x2.5,obwód dedykowany
+02-3F,parter,kuchnia,3F,rozdzielnica,płyta indukcyjna,YDYp 5x2.5,obwód trójfazowy dedykowany
+02-ZAL,parter,kuchnia,ZAL,rozdzielnica,roleta okna kuchennego,OWY 5x0.75,
+02-KON,parter,kuchnia,KON,centrala alarmowa,kontaktron okna,YTDY 4x0.5,
+02-DYM,parter,kuchnia,DYM,centrala alarmowa,czujka dymu,YTDY 6x0.5,
+03-WL1,parter,salon,WL,rozdzielnica,włącznik przy wejściu do salonu,U/UTP kat. 6,
+03-WL2,parter,salon,WL,rozdzielnica,włącznik przy drzwiach tarasowych,U/UTP kat. 6,
+03-OSW,parter,salon,OSW,rozdzielnica,oświetlenie sufitowe,YDYp 3x1.5,
+03-GN1,parter,salon,GN,rozdzielnica,gniazdka - ściana TV,YDYp 3x2.5,
+03-GN2,parter,salon,GN,rozdzielnica,gniazdka - strefa kanapy,YDYp 3x2.5,
+03-GN3,parter,salon,GN,rozdzielnica,gniazdka - ściana okienna,YDYp 3x2.5,
+03-GN4,parter,salon,GN,rozdzielnica,gniazdka - ściana pozostała,YDYp 3x2.5,
+03-ZAL1,parter,salon,ZAL,rozdzielnica,roleta okna,OWY 5x0.75,
+03-ZAL2,parter,salon,ZAL,rozdzielnica,roleta drzwi tarasowych,OWY 5x0.75,
+03-LAN1,parter,salon,LAN,szafa rack,gniazdo LAN przy telewizorze,U/UTP kat. 6,
+03-LAN2,parter,salon,LAN,szafa rack,gniazdo LAN przy telewizorze,U/UTP kat. 6,
+03-LAN3,parter,salon,LAN,szafa rack,gniazdo LAN przy telewizorze,U/UTP kat. 6,
+03-KON1,parter,salon,KON,centrala alarmowa,kontaktron okna,YTDY 4x0.5,
+03-KON2,parter,salon,KON,centrala alarmowa,kontaktron drzwi tarasowych,YTDY 4x0.5,
+03-PIR,parter,salon,PIR,centrala alarmowa,czujka ruchu,YTDY 6x0.5,
+03-OBEC,parter,salon,OBEC,rozdzielnica,czujnik obecności do automatyki światła,YTDY 6x0.5,
+04-WL,parter,łazienka,WL,rozdzielnica,włącznik przy drzwiach,U/UTP kat. 6,
+04-OSW,parter,łazienka,OSW,rozdzielnica,oświetlenie sufitowe,YDYp 3x1.5,
+04-GN1,parter,łazienka,GN,rozdzielnica,gniazdko przy umywalce,YDYp 3x2.5,
+04-GN2,parter,łazienka,GN,rozdzielnica,gniazdko dodatkowe,YDYp 3x2.5,
+04-OBEC,parter,łazienka,OBEC,rozdzielnica,czujnik obecności do automatyki światła,YTDY 6x0.5,
+04-WOD,parter,łazienka,WOD,centrala alarmowa,czujnik zalania,YTDY 4x0.5,
+05-WL1,parter,sypialnia,WL,rozdzielnica,włącznik przy drzwiach,U/UTP kat. 6,
+05-WL2,parter,sypialnia,WL,rozdzielnica,włącznik przy łóżku - strona lewa,U/UTP kat. 6,
+05-WL3,parter,sypialnia,WL,rozdzielnica,włącznik przy łóżku - strona prawa,U/UTP kat. 6,
+05-OSW,parter,sypialnia,OSW,rozdzielnica,oświetlenie sufitowe,YDYp 3x1.5,
+05-GN1,parter,sypialnia,GN,rozdzielnica,gniazdka przy łóżku - strona lewa,YDYp 3x2.5,
+05-GN2,parter,sypialnia,GN,rozdzielnica,gniazdka przy łóżku - strona prawa,YDYp 3x2.5,
+05-GN3,parter,sypialnia,GN,rozdzielnica,gniazdka ogólne,YDYp 3x2.5,
+05-ZAL,parter,sypialnia,ZAL,rozdzielnica,roleta okna,OWY 5x0.75,
+05-LAN,parter,sypialnia,LAN,szafa rack,gniazdo LAN,U/UTP kat. 6,
+05-KON,parter,sypialnia,KON,centrala alarmowa,kontaktron okna,YTDY 4x0.5,
+Z1-WL,zewnątrz,brama,WL,rozdzielnica,przycisk otwierania furtki,U/UTP kat. 6,
+Z1-OSW,zewnątrz,brama,OSW,rozdzielnica,oświetlenie wjazdu i słupków,YDYp 3x1.5,
+Z1-GN-NAP,zewnątrz,brama,GN,rozdzielnica,zasilanie napędu bramy wjazdowej,YDYp 3x2.5,obwód dedykowany
+Z1-LAN,zewnątrz,brama,LAN,szafa rack,wideodomofon przy furtce,U/UTP kat. 6,PoE
+Z1-KAM,zewnątrz,brama,KAM,szafa rack,kamera na bramę i podjazd,U/UTP kat. 6,PoE
+Z1-KON,zewnątrz,brama,KON,centrala alarmowa,kontaktron furtki,YTDY 4x0.5,
+Z2-WL,zewnątrz,taras,WL,rozdzielnica,włącznik oświetlenia tarasu,U/UTP kat. 6,
+Z2-OSW,zewnątrz,taras,OSW,rozdzielnica,oświetlenie tarasu i elewacji,YDYp 3x1.5,
+Z2-GN,zewnątrz,taras,GN,rozdzielnica,gniazdko tarasowe hermetyczne,YDYp 3x2.5,IP44
+Z2-KAM,zewnątrz,taras,KAM,szafa rack,kamera na taras i ogród,U/UTP kat. 6,PoE
