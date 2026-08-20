@@ -1,0 +1,29 @@
+producent,model,funkcja,liczba_kanalow,szerokosc_moduly,status_produktu,zasilanie,integracja_HA,zrodlo_url,data_weryfikacji,uwagi
+generic,,relay,16,12,,24V DC,,,,zalozenie przy braku preferencji
+generic,,cover,8,12,,24V DC,,,,zalozenie przy braku preferencji
+generic,,dimmer_led,8,7,,24V DC,,,,zalozenie przy braku preferencji
+generic,,input,16,4,,24V DC,,,,czesto wbudowane w sterowniki relay/cover - sprawdz uwagi producenta
+generic,,gateway,0,1,,24V DC,,,,tylko jesli wybrany system wymaga bramki
+generic,,energy,3,2,,230V AC,,,,
+boneIO,ESP 32x10A,relay,32,12,aktywny,24V DC,ESPHome,https://store.boneio.eu/product/boneio-esp-32x10a/,2026-08-20,wyjscia 10A; wbudowane 35 wejsc binarnych 24V DC i 3 analogowe; Ethernet; nie wymaga bramki
+boneIO,ESP 24x16A,relay,24,12,aktywny,24V DC,ESPHome,https://store.boneio.eu/product/boneio-esp-24x16/,2026-08-20,wyjscia 16A (pod gniazda); wbudowane 35 wejsc binarnych i 3 analogowe
+boneIO,ESP Cover,cover,16,12,aktywny,24V DC,ESPHome,https://store.boneio.eu/product/boneio-esp-cover/,2026-08-20,16 rolet = 32 wyjscia sparowane z blokada jednoczesnego zalaczenia; 35 wejsc binarnych wbudowanych
+boneIO,ESP Cover Mix,cover,8,12,aktywny,24V DC,ESPHome,https://store.boneio.eu/product/boneio-esp-cover-mix/,2026-08-20,8 rolet + dodatkowo 16 wyjsc przekaznikowych 10A na oswietlenie; 35 wejsc wbudowanych
+boneIO,ESP Dimmer LED gen 2,dimmer_led,8,7,aktywny,12-24V DC,ESPHome,https://store.boneio.eu/product/boneio-dimmer-led-gen-2/,2026-08-20,8 kanalow PWM w 2 sekcjach (RGBW/CCT/mono); max 50W na kanal; 200W na sekcje
+boneIO,ESP Input24 gen2,input,24,7,aktywny,12-24V DC,ESPHome,https://store.boneio.eu/product/boneio-esp-input24-gen2/,2026-08-20,modul rozszerzen wejsc przez Ethernet; wspolpracuje z kazdym sterownikiem boneIO; ma tez RS485 Modbus
+SmartBob,SM-LITE-1616R,relay,16,12,preorder,24V DC,ESPHome,https://smartbob.pl/produkt/sm-lite-1616r/,2026-08-20,16 wejsc binarnych 24V wbudowanych; obsluga rolet z blokada na przekaznikach; wejscie pomiaru pradu SCT; przekazniki 10A
+SmartBob,SM-MINI-0808R,relay,8,7,aktywny,24V DC,ESPHome,https://smartbob.pl/produkt/sm-mini-0808r/,2026-08-20,8 wejsc binarnych 24V wbudowanych; obsluga rolet z blokada; przekazniki 10A; nastepca oznaczenia SM-LITE-0808R
+SmartBob,SM-LITE-1624D,dimmer_led,24,12,aktywny,24V DC,ESPHome,https://smartbob.pl/produkt/sm-lite-1624d/,2026-08-20,24 wyjscia MOSFET PWM 5-50V DC (5A praca ciagla); 16 wejsc binarnych wbudowanych
+SmartBob,SM-PRO-3236D,dimmer_led,36,12,aktywny,24V DC,ESPHome,https://smartbob.pl/produkt/sm-pro-3236d/,2026-08-20,36 wyjsc MOSFET PWM do 26V DC (5A praca ciagla); 32 wejscia binarne wbudowane
+SmartBob,SM-EXP-16IN,input,16,4,aktywny,24V DC,ESPHome przez I2C sterownika,https://smartbob.pl/produkt/sm-exp-16in/,2026-08-20,ekspander wejsc na magistrali I2C (MCP23017); wymaga sterownika SMARTBOB; nie laczy sie z HA samodzielnie
+nippy,nippy DIN Relay 9 (gen. 2),relay,9,2,aktywny,24V DC (zakres 12-28V DC),MySensors przez nippy DIN Gateway (wymagana bramka),https://nippysmart.com/produkt/nippy-din-relay-9/,2026-08-20,styki bezpotencjalowe 5A; brak wbudowanych wejsc - laczniki przez modul Input 6
+nippy,nippy SIMPLE DIN Input/Relay 6/6 (gen. 2),relay,6,2,aktywny,24V DC (zakres 12-28V DC),MySensors przez nippy DIN Gateway (wymagana bramka),https://nippysmart.com/produkt/nippy-simple-din-input-relay-6-6/,2026-08-20,wariant laczony: 6 przekaznikow 5A + 6 wbudowanych wejsc cyfrowych; dziala autonomicznie bez bramki (P2P)
+nippy,nippy SIMPLE DIN Roller Shutter 1 (gen. 2),cover,1,1,aktywny,24V DC (zakres 12-28V DC),MySensors przez nippy DIN Gateway (wymagana bramka),https://nippysmart.com/produkt/din-roller-shutter/,2026-08-20,1 roleta 230V AC (gora/dol); 2 wbudowane wejscia cyfrowe pod laczniki
+nippy,nippy DIN LED Dimmer 4 PWM (gen. 2),dimmer_led,4,1,aktywny,24V DC (zakres 12-28V DC),MySensors przez nippy DIN Gateway (wymagana bramka),https://nippysmart.com/produkt/nippy-din-led-dimmer-4-pwm-ver-2-01/,2026-08-20,4 kanaly PWM DC; lacznie 200W
+nippy,nippy DIN Input 6 (gen. 2),input,6,1,aktywny,24V DC (zakres 12-28V DC),MySensors przez nippy DIN Gateway (wymagana bramka),https://nippysmart.com/produkt/nippy-din-input-6/,2026-08-20,6 wejsc cyfrowych 2-28V DC; obsluguje Real P2P bez centralki
+nippy,nippy DIN Gateway PRO (gen. 2),gateway,0,1,aktywny,24V DC (zakres 12-28V DC),natywna integracja MySensors w Home Assistant przez Ethernet (LAN),https://nippysmart.com/produkt/nippy-din-gateway/,2026-08-20,wymagana do integracji z HA; RJ45 10/100; obsluga do 128 modulow na nippyBUS
+Shelly Pro,Shelly Pro 4PM V2,relay,4,3,aktywny,110-240V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm-v2,2026-08-20,4 wyjscia 16A (40A lacznie); 4 wbudowane wejscia S1-S4 pod wlaczniki; pomiar mocy; WiFi+LAN+BT
+Shelly Pro,Shelly Pro Dual Cover PM,cover,2,3,aktywny,110-240V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-dual-cover-pm,2026-08-20,2 rolety po 16A; 4 wejscia S1-S4; pomiar mocy na rolete; wymagany przewod N
+Shelly Pro,Shelly Pro Dimmer 2PM,dimmer_led,2,2,aktywny,110-240V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-dimmer-2pm,2026-08-20,sciemnianie fazowe do 200W na kanal; 4 wejscia SW1-SW4; fizycznie 19mm - przyjeto 2 moduly dla zapasu
+Shelly Pro,Shelly Pro RGBWW PM,dimmer_led,5,2,aktywny,12-24V DC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-rgbww-pm,2026-08-20,tasmy LED 5 kanalow; profile RGB+CCT / 2xCCT / 5x mono; 5 wejsc SW1-SW5; fizycznie 19mm - przyjeto 2 moduly
+Shelly Pro,Shelly Pro 3EM,energy,3,2,aktywny,100-260V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-3em,2026-08-20,licznik 3-fazowy (dziala tez 1-fazowo); przekladniki CT 120A; fizycznie 19mm - przyjeto 2 moduly

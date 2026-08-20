@@ -1,0 +1,93 @@
+producent,seria,symbol,aparat,szerokosc_moduly,In_A,status_produktu,parametry,zrodlo_url,data_weryfikacji,uwagi
+generic,,,rozlacznik_glowny_4P,4,63,,,,,
+generic,,,spd_t1_t2,8,,,,,,rezerwa projektowa = max z katalogu (Hager 8M); realnie 4-8M
+generic,,,lampka_obecnosci_faz,1,,,,,,
+generic,,,przelacznik_zrodla_I-0-II_4P,8,63,,,,,rezerwa projektowa = max z katalogu; realnie 4-8M; nie kazdy producent ma wersje modulowa
+generic,,,roznicowka_2P_typA,2,40,,,,,
+generic,,,roznicowka_4P_typA,4,40,,,,,
+generic,,,roznicowka_4P_typB,4,40,,,,,wallbox
+generic,,,eska_1P_B10,1,10,,,,,
+generic,,,eska_1P_B16,1,16,,,,,
+generic,,,eska_3P_B16,3,16,,,,,
+generic,,,eska_3P_C16,3,16,,,,,pompa ciepla
+generic,,,rozlacznik_izolacyjny_3P,3,63,,,,,rezerwa projektowa; Noark Ex9I40 ma 3P w 1M
+generic,,,licznik_energii_3F_modbus,5,,,,,,rezerwa projektowa = max z katalogu; realnie 4-5M
+generic,,,zasilacz_din_24V,6,,,,,,rezerwa projektowa = max z katalogu; realnie 2-6M wg mocy
+Hager,SBN,SBN463,rozlacznik_glowny_4P,4,63,aktywny,,https://hager.com/pl/katalog/produkt/sbn463-modulowy-rozlacznik-izolacyjny-4p-63a,2026-08-20,
+Hager,SPD,SPA801,spd_t1_t2,8,,aktywny,typ=T1+T2;Iimp_kA=25/biegun;Imax_kA=50;Uc_V=350;Up_kV=1.5;siec=TN-S/TT,https://assets.hager.com/step-content/P/PDS_823657432001EN/Document/std.lang.all/PDS_SPA801_2001_en-GB.pdf,2026-08-20,8M wg karty PDS (strona PL blednie podaje 4M przy 142.4 mm); Iimp 25kA L-N(PEN)/N-PE; styk sygnalizacyjny
+Hager,SVN,SVN127,lampka_obecnosci_faz,1,,aktywny,,https://hager.com/pl/katalog/produkt/svn127-lampka-sygn-3x-czerwona-230v-ac,2026-08-20,
+Hager,SF,SF463,przelacznik_zrodla_I-0-II_4P,8,63,aktywny,,https://hager.com/pl/katalog/produkt/sf463-przelacznik-zasilania-3p-n-i-0-ii-63a,2026-08-20,3P+N 63A reczny
+Hager,CDA,CDA240J,roznicowka_2P_typA,2,40,aktywny,typ_RCD=A;Idn_mA=30,https://hager.com/pl/katalog/produkt/cda240j-rccb-2p-40a-30ma-typ-a,2026-08-20,konstrukcja 1P+N
+Hager,CDA,CDA440J,roznicowka_4P_typA,4,40,aktywny,typ_RCD=A;Idn_mA=30,https://hager.com/pl/katalog/produkt/cda440j-rccb-4p-40a-30ma-typ-a,2026-08-20,
+Hager,CDB,CDB640E,roznicowka_4P_typB,4,40,aktywny,typ_RCD=B;Idn_mA=30,https://hager.com/de/katalog/produkt/cdb640e-fi-schalter-3p-n-10ka-40a-30ma-typ-b,2026-08-20,z katalogu DE; dostepnosc w PL potwierdz u dystrybutora
+Hager,MBN,MBN110E,eska_1P_B10,1,10,aktywny,Icn_kA=6,https://hager.com/pl/katalog/produkt/mbn110e-mcb-6ka-1p-b-10a,2026-08-20,
+Hager,MBN,MBN116E,eska_1P_B16,1,16,aktywny,Icn_kA=6,https://hager.com/pl/katalog/produkt/mbn116e-mcb-6ka-1p-b-16a,2026-08-20,
+Hager,MBN,MBN316E,eska_3P_B16,3,16,aktywny,Icn_kA=6,https://hager.com/pl/katalog/produkt/mbn316e-mcb-6ka-3p-b-16a,2026-08-20,
+Hager,MCN,MCN316E,eska_3P_C16,3,16,aktywny,Icn_kA=6,https://hager.com/pl/katalog/produkt/mcn316e-mcb-6ka-3p-c-16a,2026-08-20,
+Hager,SBN,SBN363,rozlacznik_izolacyjny_3P,3,63,aktywny,,https://hager.com/pl/katalog/produkt/sbn363-modulowy-rozlacznik-izolacyjny-3p-63a,2026-08-20,
+Hager,agardio.measure,ECR380D,licznik_energii_3F_modbus,4,,aktywny,pomiar=bezposredni;In_max_A=80;MID=1;protokol=Modbus_RTU,https://hager.com/pl/katalog/produkt/ecr380d-liczn-en-elektr-3-f-80a-modbus-mid,2026-08-20,80A pomiar bezposredni; MID
+Hager,agardio.manager,HTG911H,zasilacz_din_24V,4,,aktywny,Uout_V=24;Iout_A=2.5;Pout_W=60,https://hager.com/pl/katalog/produkt/htg911h-agardio-manager-zasilacz-24vdc-2-5a-70c,2026-08-20,24VDC 2.5A
+Eaton,IS,IS-63/4,rozlacznik_glowny_4P,4,63,aktywny,,https://www.eaton.com/pl/pl-pl/skuPage.276277.html,2026-08-20,
+Eaton,xPole SPBT12,SPBT12-280/4,spd_t1_t2,4,,aktywny,typ=T1+T2,https://www.eaton.com/pl/pl-pl/skuPage.158331.html,2026-08-20,
+Eaton,UVA,167285,lampka_obecnosci_faz,1,,aktywny,,https://www.eaton.com/pl/pl-pl/skuPage.167285.html,2026-08-20,symbol = nr katalogowy; 3 lampki zielone
+Eaton,xPole PXF,PXF-40/2/003-A,roznicowka_2P_typA,2,40,aktywny,typ_RCD=A;Idn_mA=30,https://www.eaton.com/pl/pl-pl/skuPage.236748.html,2026-08-20,
+Eaton,xPole PXF,PXF-40/4/003-A,roznicowka_4P_typA,4,40,aktywny,typ_RCD=A;Idn_mA=30,https://www.eaton.com/pl/pl-pl/skuPage.236776.html,2026-08-20,
+Eaton,xEffect FRCdM,FRCDM-40/4/003-G/B,roznicowka_4P_typB,4,40,aktywny,typ_RCD=G/B;Idn_mA=30,https://www.eaton.com/pl/pl-pl/skuPage.167893.html,2026-08-20,
+Eaton,xPole PXL,PXL-B10/1,eska_1P_B10,1,10,aktywny,Icn_kA=6,https://www.eaton.com/pl/pl-pl/skuPage.236029.html,2026-08-20,
+Eaton,xPole PXL,PXL-B16/1,eska_1P_B16,1,16,aktywny,Icn_kA=6,https://www.eaton.com/pl/pl-pl/skuPage.236033.html,2026-08-20,
+Eaton,xPole PXL,PXL-B16/3,eska_3P_B16,3,16,aktywny,Icn_kA=6,https://www.eaton.com/pl/pl-pl/skuPage.236388.html,2026-08-20,
+Eaton,xPole PXL,PXL-C16/3,eska_3P_C16,3,16,aktywny,Icn_kA=6,https://www.eaton.com/pl/pl-pl/skuPage.236426.html,2026-08-20,
+Eaton,IS,IS-63/3,rozlacznik_izolacyjny_3P,3,63,aktywny,,https://www.eaton.com/pl/pl-pl/skuPage.276276.html,2026-08-20,
+Eaton,EMI3P,EMI3P-Y2C0,licznik_energii_3F_modbus,4,,aktywny,pomiar=CT;MID=0;protokol=Modbus_RTU;montaz=DIN,https://www.eaton.com/pl/pl-pl/skuPage.EMI3P-Y2C0.html,2026-08-20,pomiar posredni przez przekladniki CT
+Eaton,easyPOW,EASY400-POW,zasilacz_din_24V,4,,aktywny,Uout_V=24;Iout_A=1.25;Pout_W=30,https://www.eaton.com/pl/pl-pl/skuPage.212319.html,2026-08-20,24VDC 1.25A
+Eaton,,,przelacznik_zrodla_I-0-II_4P,,63,brak,,,2026-08-20,brak wersji modulowej w ofercie; najblizszy T3-4-8902/Z montowany na tyle panelu
+Schneider,Acti9 iSW,A9S65463,rozlacznik_glowny_4P,4,63,do_weryfikacji,,https://download.schneider-electric.com/files?p_Doc_Ref=A9S65463_DATASHEET&p_File_Name=A9S65463_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,niepotwierdzona informacja o koncu sprzedazy (se.com blokuje weryfikacje automatyczna) - sprawdz status recznie przed uzyciem
+Schneider,Acti9 iPRD1,A9L16482,spd_t1_t2,4,,aktywny,typ=T1+T2;Iimp_kA=12.5/biegun,https://download.schneider-electric.com/files?p_Doc_Ref=A9L16482_DATASHEET&p_File_Name=A9L16482_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,3P+N Iimp 12.5kA/biegun
+Schneider,Acti9 iIL,A9E18327,lampka_obecnosci_faz,1,,aktywny,,https://download.schneider-electric.com/files?p_Doc_Ref=A9E18327_DATASHEET&p_File_Name=A9E18327_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iSSW,A9SCO463,przelacznik_zrodla_I-0-II_4P,6,63,aktywny,,https://download.schneider-electric.com/files?p_Doc_Ref=A9SCO463_DATASHEET&p_File_Name=A9SCO463_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,reczny bez automatyki SZR
+Schneider,Acti9 iID,A9R21240,roznicowka_2P_typA,2,40,aktywny,typ_RCD=A;Idn_mA=30,https://download.schneider-electric.com/files?p_Doc_Ref=A9R21240_DATASHEET&p_File_Name=A9R21240_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iID,A9R21440,roznicowka_4P_typA,4,40,aktywny,typ_RCD=A;Idn_mA=30,https://download.schneider-electric.com/files?p_Doc_Ref=A9R21440_DATASHEET&p_File_Name=A9R21440_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iID,A9Z51440,roznicowka_4P_typB,4,40,aktywny,typ_RCD=B-EV;Idn_mA=30,https://download.schneider-electric.com/files?p_Doc_Ref=A9Z51440_DATASHEET&p_File_Name=A9Z51440_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,wariant B-EV pod ladowarki
+Schneider,Acti9 iC60N,A9F03110,eska_1P_B10,1,10,aktywny,Icn_kA=6,https://download.schneider-electric.com/files?p_Doc_Ref=A9F03110_DATASHEET&p_File_Name=A9F03110_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iC60N,A9F03116,eska_1P_B16,1,16,aktywny,Icn_kA=6,https://download.schneider-electric.com/files?p_Doc_Ref=A9F03116_DATASHEET&p_File_Name=A9F03116_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iC60N,A9F03316,eska_3P_B16,3,16,aktywny,Icn_kA=6,https://download.schneider-electric.com/files?p_Doc_Ref=A9F03316_DATASHEET&p_File_Name=A9F03316_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iC60N,A9F04316,eska_3P_C16,3,16,aktywny,Icn_kA=6,https://download.schneider-electric.com/files?p_Doc_Ref=A9F04316_DATASHEET&p_File_Name=A9F04316_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,
+Schneider,Acti9 iSW,A9S65363,rozlacznik_izolacyjny_3P,3,63,aktywny,,https://www.se.com/uk/en/product/A9S65363/switch-disconnector-isw-3p-63-a-415-v/,2026-08-20,SKU potwierdzony (se.com UK); szerokosc 3M przyjeta jak dla serii iSW - karta niedostepna automatycznie; A9S65340 to wariant 40A
+Schneider,Acti9 iEM3000,A9MEM3155,licznik_energii_3F_modbus,5,,aktywny,pomiar=bezposredni;In_max_A=63;MID=1;protokol=Modbus_RTU,https://download.schneider-electric.com/files?p_Doc_Ref=A9MEM3155_DATASHEET&p_File_Name=A9MEM3155_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,63A bezposredni; MID
+Schneider,Modicon Power Supply,ABLM1A24012,zasilacz_din_24V,2,,aktywny,Uout_V=24;Iout_A=1.25;Pout_W=30,https://download.schneider-electric.com/files?p_Doc_Ref=ABLM1A24012_DATASHEET&p_File_Name=ABLM1A24012_DATASHEET_NG_en-GB.pdf&p_enDocType=Product+Data+Sheet,2026-08-20,24VDC 1.25A
+Legrand,RX3,419331,rozlacznik_glowny_4P,4,63,aktywny,,https://www.legrand.com/ecatalogue/en/catalog/products/isolating-switch-rx3-4p-63a-419331,2026-08-20,
+Legrand,ON300,412277,spd_t1_t2,4,,aktywny,typ=T1+T2;Iimp_kA=12.5/biegun,https://www.legrand.com/ecatalogue/en/catalog/products/surge-protective-device-protection-of-main-distribution-board-t1t2-limp-125-kapole-3pn-right-412277,2026-08-20,3P+N Iimp 12.5kA/biegun wersja right
+Legrand,CX3,412932,lampka_obecnosci_faz,1,,aktywny,,https://www.legrand.com/ecatalogue/412932-led-indicator-triple-230-400-v.html,2026-08-20,
+Legrand,TX3,411560,roznicowka_2P_typA,2,40,aktywny,typ_RCD=A;Idn_mA=30,https://www.legrand.com/ecatalogue/en/catalog/products/rccb-tx3-2p-230-v-30-ma-40-type-411560,2026-08-20,
+Legrand,TX3,411765,roznicowka_4P_typA,4,40,aktywny,typ_RCD=A;Idn_mA=30,https://www.legrand.com/ecatalogue/en/catalog/products/rccb-tx3-4p-400-v-30-ma-40-type-411765,2026-08-20,
+Legrand,DX3,411966,roznicowka_4P_typB,4,40,aktywny,typ_RCD=B;Idn_mA=30,https://www.legrand.com/ecatalogue/en/catalog/products/rccb-dx3-4-pole-40a-type-b-30ma-411966,2026-08-20,
+Legrand,TX3,403355,eska_1P_B10,1,10,aktywny,Icn_kA=6,https://www.legrand.com/ecatalogue/en/catalog/products/mcb-tx3-6000a-1-pole-10a-curve-b-403355,2026-08-20,
+Legrand,TX3,403357,eska_1P_B16,1,16,aktywny,Icn_kA=6,https://www.legrand.com/ecatalogue/403357-mcb-tx-6000-1p-230-400.html,2026-08-20,
+Legrand,TX3,403402,eska_3P_B16,3,16,aktywny,Icn_kA=6,https://www.legrand.com/ecatalogue/en/catalog/products/mcb-tx3-6000a-3-pole-16a-curve-b-403402,2026-08-20,
+Legrand,TX3,403545,eska_3P_C16,3,16,aktywny,Icn_kA=6,https://www.legrand.com/ecatalogue/403545-mcb-tx-6000-3p-400.html,2026-08-20,
+Legrand,RX3,419328,rozlacznik_izolacyjny_3P,3,63,aktywny,,https://www.legrand.com/ecatalogue/en/catalog/products/isolating-switch-rx3-3p-63a-419328,2026-08-20,
+Legrand,EMDX3,412091,licznik_energii_3F_modbus,4,,aktywny,pomiar=bezposredni;In_max_A=63;MID=0;protokol=Modbus_RTU,https://www.legrand.com/ecatalogue-mobile/412091-three-phase-meter-emdx-with.html,2026-08-20,63A bezposredni; non-MID (MID: 412093)
+Legrand,,146723,zasilacz_din_24V,3,,aktywny,Uout_V=24;Iout_A=2.5;Pout_W=60,https://www.legrand.com/ecatalogue/en/catalog/products/switched-mode-modular-power-supply-24v-60w-146723,2026-08-20,24VDC 60W 2.5A
+Legrand,,,przelacznik_zrodla_I-0-II_4P,,63,brak,,,2026-08-20,brak wersji modulowej 4P w ofercie; modulowy CX3 412903 to tylko 2P 32A
+Noark,Ex9I125,Ex9I125 4P 63A,rozlacznik_glowny_4P,4,63,aktywny,,https://noark-electric.eu/en/product/100882,2026-08-20,
+Noark,Ex9UE1+2,Ex9UE1+2 12.5 3PN 275,spd_t1_t2,4,,aktywny,typ=T1+T2;Iimp_kA=12.5/biegun,https://noark-electric.eu/en/product/103340,2026-08-20,
+Noark,Ex9PD,Ex9PD3e 230/400V AC/DC,lampka_obecnosci_faz,1,,aktywny,,https://noark-electric.pl/pl/produkt/106313,2026-08-20,
+Noark,Ex9BT3G,Ex9BT3G 4CO 63A EU,przelacznik_zrodla_I-0-II_4P,4,63,aktywny,,https://noark-electric.eu/en/product/114831,2026-08-20,
+Noark,Ex9L-H,Ex9L-H 2P 40A A 30mA,roznicowka_2P_typA,2,40,aktywny,typ_RCD=A;Idn_mA=30;Icn_kA=10,https://noark-electric.eu/en/product/108194,2026-08-20,wersja 10kA
+Noark,Ex9L-N,Ex9L-N 4P 40A A 30mA,roznicowka_4P_typA,4,40,aktywny,typ_RCD=A;Idn_mA=30,https://noark-electric.pl/pl/produkt/108362,2026-08-20,
+Noark,Ex9LB63,Ex9LB63 3P+N 40A 30mA,roznicowka_4P_typB,4,40,aktywny,typ_RCD=B;Idn_mA=30,https://noark-electric.eu/en/product/110222,2026-08-20,
+Noark,Ex9BN,Ex9BN 1P B10,eska_1P_B10,1,10,aktywny,Icn_kA=6,https://noark-electric.eu/en/product/100006,2026-08-20,
+Noark,Ex9BN,Ex9BN 1P B16,eska_1P_B16,1,16,aktywny,Icn_kA=6,https://noark-electric.eu/en/product/100008,2026-08-20,
+Noark,Ex9BN,Ex9BN 3P B16,eska_3P_B16,3,16,aktywny,Icn_kA=6,https://noark-electric.eu/en/product/100053,2026-08-20,
+Noark,Ex9BN,Ex9BN 3P C16,eska_3P_C16,3,16,aktywny,Icn_kA=6,https://noark-electric.eu/en/product/100143,2026-08-20,
+Noark,Ex9I40,Ex9I40 3P 40A,rozlacznik_izolacyjny_3P,1,40,aktywny,,https://noark-electric.pl/pl/produkt/101392,2026-08-20,UWAGA 40A nie 63A; 3 bieguny w 1 module wg strony producenta
+Noark,Ex9EMS,Ex9EMS 3P 4M 100A MO 2T,licznik_energii_3F_modbus,4,,aktywny,pomiar=bezposredni;In_max_A=100;MID=0;protokol=Modbus_RTU,https://noark-electric.eu/en/product/107297,2026-08-20,wariant MO = Modbus; MB to M-Bus - nie mylic
+Noark,Ex9PS,Ex9PS 100W S 24VDC,zasilacz_din_24V,6,,aktywny,Uout_V=24;Iout_A=4.2;Pout_W=100,https://noark-electric.pl/pl/produkt/111735,2026-08-20,100W
+generic,,,zasilacz_din_12V,4,,,,,,np. tasmy LED 12V
+MeanWell,HDR,HDR-15-24,zasilacz_din_24V,1,,aktywny,Uout_V=24;Iout_A=0.63;Pout_W=15.2,https://www.meanwell.com/Upload/PDF/HDR-15/HDR-15-SPEC.PDF,2026-08-20,szerokosc 17.5mm (1SU)
+MeanWell,HDR,HDR-30-24,zasilacz_din_24V,2,,aktywny,Uout_V=24;Iout_A=1.5;Pout_W=36,https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.pdf,2026-08-20,szerokosc 35mm
+MeanWell,HDR,HDR-60-24,zasilacz_din_24V,3,,aktywny,Uout_V=24;Iout_A=2.5;Pout_W=60,https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.pdf,2026-08-20,szerokosc 52.5mm
+MeanWell,HDR,HDR-100-24,zasilacz_din_24V,4,,aktywny,Uout_V=24;Iout_A=3.83;Pout_W=92,https://www.meanwell.com/Upload/PDF/HDR-100/HDR-100-SPEC.pdf,2026-08-20,szerokosc 70mm; wariant HDR-100-24N daje 4.2A/100.8W
+MeanWell,HDR,HDR-150-24,zasilacz_din_24V,6,,aktywny,Uout_V=24;Iout_A=6.25;Pout_W=150,https://www.meanwell.com/Upload/PDF/HDR-150/HDR-150-SPEC.pdf,2026-08-20,szerokosc 105mm; parametry dla 230VAC (przy 115VAC 127.4W)
+MeanWell,HDR,HDR-60-12,zasilacz_din_12V,3,,aktywny,Uout_V=12;Iout_A=4.5;Pout_W=54,https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.pdf,2026-08-20,szerokosc 52.5mm; moc znamionowa 54W (nie 60W)
+MeanWell,HDR,HDR-100-12,zasilacz_din_12V,4,,aktywny,Uout_V=12;Iout_A=7.1;Pout_W=85.2,https://www.meanwell.com/Upload/PDF/HDR-100/HDR-100-SPEC.pdf,2026-08-20,szerokosc 70mm; wariant HDR-100-12N daje 7.5A/90W
