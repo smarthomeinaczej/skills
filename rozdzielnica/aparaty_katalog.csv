@@ -13,6 +13,14 @@ generic,,,eska_3P_C16,3,16,,,,,pompa ciepla
 generic,,,rozlacznik_izolacyjny_3P,3,63,,,,,rezerwa projektowa; Noark Ex9I40 ma 3P w 1M
 generic,,,licznik_energii_3F_modbus,5,,,,,,rezerwa projektowa = max z katalogu; realnie 4-5M
 generic,,,zasilacz_din_24V,6,,,,,,rezerwa projektowa = max z katalogu; realnie 2-6M wg mocy
+generic,,,rozlacznik_glowny_2P,2,63,,,,,instalacja jednofazowa
+generic,,,roznicowka_4P_typB-EV,4,40,,,,,wallbox bez detekcji 6 mA DC; bywa 6M - sprawdz w katalogu producenta
+generic,,,eska_1P_B6,1,6,,,,,zasilacze automatyki/LED
+generic,,,eska_1P_C10,1,10,,,,,oswietlenie z wieloma zasilaczami LED (prad rozruchowy)
+generic,,,eska_1P_C16,1,16,,,,,pompa ciepla 1F
+generic,,,eska_1P_B20,1,20,,,,,falownik PV 1F
+generic,,,eska_3P_B32,3,32,,,,,wallbox 22 kW
+generic,,,licznik_energii_3F_dwukierunkowy_CT,5,,,pomiar=CT,,,rezerwa projektowa; zwykle dostawa instalatora PV/wallboxa
 Hager,SBN,SBN463,rozlacznik_glowny_4P,4,63,aktywny,,https://hager.com/pl/katalog/produkt/sbn463-modulowy-rozlacznik-izolacyjny-4p-63a,2026-08-20,
 Hager,SPD,SPA801,spd_t1_t2,8,,aktywny,typ=T1+T2;Iimp_kA=25/biegun;Imax_kA=50;Uc_V=350;Up_kV=1.5;siec=TN-S/TT,https://assets.hager.com/step-content/P/PDS_823657432001EN/Document/std.lang.all/PDS_SPA801_2001_en-GB.pdf,2026-08-20,8M wg karty PDS (strona PL blednie podaje 4M przy 142.4 mm); Iimp 25kA L-N(PEN)/N-PE; styk sygnalizacyjny
 Hager,SVN,SVN127,lampka_obecnosci_faz,1,,aktywny,,https://hager.com/pl/katalog/produkt/svn127-lampka-sygn-3x-czerwona-230v-ac,2026-08-20,
@@ -91,3 +99,4 @@ MeanWell,HDR,HDR-100-24,zasilacz_din_24V,4,,aktywny,Uout_V=24;Iout_A=3.83;Pout_W
 MeanWell,HDR,HDR-150-24,zasilacz_din_24V,6,,aktywny,Uout_V=24;Iout_A=6.25;Pout_W=150,https://www.meanwell.com/Upload/PDF/HDR-150/HDR-150-SPEC.pdf,2026-08-20,szerokosc 105mm; parametry dla 230VAC (przy 115VAC 127.4W)
 MeanWell,HDR,HDR-60-12,zasilacz_din_12V,3,,aktywny,Uout_V=12;Iout_A=4.5;Pout_W=54,https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.pdf,2026-08-20,szerokosc 52.5mm; moc znamionowa 54W (nie 60W)
 MeanWell,HDR,HDR-100-12,zasilacz_din_12V,4,,aktywny,Uout_V=12;Iout_A=7.1;Pout_W=85.2,https://www.meanwell.com/Upload/PDF/HDR-100/HDR-100-SPEC.pdf,2026-08-20,szerokosc 70mm; wariant HDR-100-12N daje 7.5A/90W
+

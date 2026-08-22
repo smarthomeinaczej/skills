@@ -27,3 +27,4 @@ Shelly Pro,Shelly Pro Dual Cover PM,cover,2,3,aktywny,110-240V AC,lokalne API JS
 Shelly Pro,Shelly Pro Dimmer 2PM,dimmer_led,2,2,aktywny,110-240V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-dimmer-2pm,2026-08-20,sciemnianie fazowe do 200W na kanal; 4 wejscia SW1-SW4; fizycznie 19mm - przyjeto 2 moduly dla zapasu
 Shelly Pro,Shelly Pro RGBWW PM,dimmer_led,5,2,aktywny,12-24V DC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-rgbww-pm,2026-08-20,tasmy LED 5 kanalow; profile RGB+CCT / 2xCCT / 5x mono; 5 wejsc SW1-SW5; fizycznie 19mm - przyjeto 2 moduly
 Shelly Pro,Shelly Pro 3EM,energy,3,2,aktywny,100-260V AC,lokalne API JSON-RPC + MQTT + Home Assistant,https://kb.shelly.cloud/knowledge-base/shelly-pro-3em,2026-08-20,licznik 3-fazowy (dziala tez 1-fazowo); przekladniki CT 120A; fizycznie 19mm - przyjeto 2 moduly
+
