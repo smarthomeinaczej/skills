@@ -1,6 +1,6 @@
 # generuj_dokumentacje_pdf
 
-Skrypt `rozdzielnica_pdf.py` łączy wyniki skilli **`obwody`** i **`rozdzielnica`** w jeden PDF:
+Skrypt `rozdzielnica_pdf.py` łączy wyniki skilli **[`obwody`](https://github.com/smarthomeinaczej/skills/tree/main/obwody)** i **[`rozdzielnica`](https://github.com/smarthomeinaczej/skills/tree/main/rozdzielnica)** w jeden PDF:
 
 1. strona podsumowania — liczba obwodów (łącznie, per punkt zbiorczy, per typ) i bilans modułów obudowy,
 2. tabela obwodów pogrupowana po pomieszczeniach (kolor wiersza = rozdzielnica / centrala alarmowa / szafa rack),
@@ -46,9 +46,7 @@ uv run rozdzielnica_pdf.py --obwody ../demo/obwody.csv --moduly moduly.csv --tyt
 
 ## Zawartość folderu
 
-- `rozdzielnica_pdf.py` — skrypt,
-- `moduly.csv` — **przykładowy, ręcznie przygotowany** rozkład 6×24 (Hager + boneIO) pod `../demo/obwody.csv`; nie jest wynikiem skilla,
-- `projekt_instalacji.pdf` — PDF wygenerowany z powyższych.
+- `rozdzielnica_pdf.py` — skrypt.
 
 Projekt jest poglądowy — weryfikuje go elektryk z uprawnieniami.
 
